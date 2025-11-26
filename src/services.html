@@ -67,7 +67,7 @@
         <!-- Service 1: Habitaciones -->
         <div class="row g-4 align-items-center mb-5">
           <div class="col-lg-6">
-            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMHJvb218ZW58MXx8fHwxNzYyNTQyNTE1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Habitaciones" class="service-img">
+            <img src="../img/Galeria7.jpg" alt="Habitaciones" class="service-img">
           </div>
           <div class="col-lg-6">
             <div class="d-flex align-items-center gap-3 mb-3">
@@ -76,19 +76,19 @@
             </div>
             <p class="text-muted mb-3">Suites y habitaciones diseñadas con materiales sostenibles y máximo confort</p>
             <ul class="feature-list list-unstyled mb-4">
-              <li id="service1Item">Suite Jardín - 150€</li>
-              <li>Suite Panorámica - 200€</li>
-              <li>Suite Familiar - 250€</li>
-              <li>Villa Privada - 350€</li>
+              <li>Habitacion Estandar - 150€</li>
+              <li>Habitacion Doble - 200€</li>
+              <li>Habitacion Familiar - 250€</li>
+              <li>Habitacion Premium - 350€</li>
             </ul>
-            <a href="booking.html" class="btn btn-brand">Reservar Ahora</a>
+            <a href="booking.htm" class="btn btn-brand">Reservar Ahora</a>
           </div>
         </div>
 
         <!-- Service 2: Restaurante -->
         <div class="row g-4 align-items-center mb-5 flex-row-reverse">
           <div class="col-lg-6">
-            <img src="https://images.unsplash.com/photo-1592861956120-e524fc739696?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZGluaW5nfGVufDF8fHx8MTc2MjYwMDQwMnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Restaurante" class="service-img">
+            <img src="../img/Galeria Previa4.jpg" alt="Restaurante" class="service-img">
           </div>
           <div class="col-lg-6">
             <div class="d-flex align-items-center gap-3 mb-3">
@@ -109,7 +109,7 @@
         <!-- Service 3: Spa & Bienestar -->
         <div class="row g-4 align-items-center mb-5">
           <div class="col-lg-6">
-            <img src="https://images.unsplash.com/photo-1554424518-336ec861b705?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcGElMjB3ZWxsbmVzc3xlbnwxfHx8fDE3NjI1MDg2NTl8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Spa" class="service-img">
+            <img src="../img/Galeria9.jpg" alt="Spa" class="service-img">
           </div>
           <div class="col-lg-6">
             <div class="d-flex align-items-center gap-3 mb-3">
@@ -146,14 +146,14 @@
           <div class="col-md-6 col-lg-3">
             <div class="text-center">
               <div class="amenity-icon">☕</div>
-              <h5 class="text-brand">Minibar Orgánico</h5>
+              <h5 class="text-brand">Minibaro</h5>
               <p class="small text-muted">Productos locales en habitaciones</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="text-center">
               <div class="amenity-icon">💨</div>
-              <h5 class="text-brand">Climatización Eco</h5>
+              <h5 class="text-brand">Climatización</h5>
               <p class="small text-muted">Sistema sostenible y eficiente</p>
             </div>
           </div>
@@ -184,15 +184,15 @@
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="additional-service">
-              <h5 class="text-brand mb-2">🧺 Lavandería Ecológica</h5>
+              <h5 class="text-brand mb-2">🧺 Lavandería</h5>
               <p class="small text-muted mb-2">Servicio de lavandería con productos biodegradables</p>
               <p class="text-brand fw-bold">Desde 15€</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="additional-service">
-              <h5 class="text-brand mb-2">🚴 Alquiler de Bicicletas</h5>
-              <p class="small text-muted mb-2">Bicicletas eléctricas para explorar la zona</p>
+              <h5 class="text-brand mb-2">🚴 Ayuda en eleccion de tours</h5>
+              <p class="small text-muted mb-2">Tours en la zona</p>
               <p class="text-brand fw-bold">Gratuito para huéspedes</p>
             </div>
           </div>
@@ -251,17 +251,5 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script>
-      function loadServicesData() {
-        const servicesData = JSON.parse(localStorage.getItem('servicesContent'));
-        if (servicesData) {
-          if (servicesData.service1Name && servicesData.service1Price) {
-            document.getElementById('service1Item').textContent = servicesData.service1Name + ' - ' + servicesData.service1Price + '€';
-          }
-        }
-      }
-
-      loadServicesData();
-    </script>
   </body>
 </html>
